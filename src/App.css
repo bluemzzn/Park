@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+layer base {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+@theme {
+  --color-gray: #EEEEEE;
+  --color-green: #A2AF9B;
+  --color-brown: #DCCFC0;
+  --color-bg: #FAF9EE;
+}
+
