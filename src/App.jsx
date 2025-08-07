@@ -1,17 +1,27 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css'
-import Navbar from './components/Navbar'
-import Filters from './components/Filters'
+import Layout from "./pages/Layout.jsx";
+import Home from "./pages/Home.jsx"
+import Rent from "./pages/Rent.jsx"
+import Contact from "./pages/Contact.jsx"
+import Login from "./pages/Login.jsx"
+import NoPages from "./pages/NoPages.jsx"
+
 
 function App() {
   
 
   return (
-    <div className='' >
-      <Navbar />
-      <Filters />
-    </div>
+   <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="rent" element={<Rent />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPages />} />
+        </Route>
+      </Routes>
+   </BrowserRouter>
   )
 }
 

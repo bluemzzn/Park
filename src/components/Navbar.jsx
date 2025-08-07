@@ -28,7 +28,6 @@ function Navbar() {
                 <ul className='hidden list-none md:flex md:space-x-4 items-center'>
                     <li><a href="" className='font-bold'>Home</a></li>
                     <li><a href="" className='font-bold'>Rent</a></li>
-                    <li><a href="" className='font-bold'>About</a></li>
                     <li><a href="" className='font-bold'>Contact</a></li>
                 </ul>
 
@@ -37,7 +36,6 @@ function Navbar() {
                     <ul className='flex-col list-none m-4 md:hidden bg-[var(--color-green)]'>
                         <li className='py-2'><a href="" className='font-bold'>Home</a></li>
                         <li className='py-2'><a href="" className='font-bold'>Rent</a></li>
-                        <li className='py-2'><a href="" className='font-bold'>About</a></li>
                         <li className='py-2'><a href="" className='font-bold'>Contact</a></li>
                     </ul>
                 ) : null}
